@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Book App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="book-container">
+        <div class="book">
+            <!-- Page 1: Introduction to Web Development -->
+            <div class="page active" data-page="1">
+                <div class="page-number">01</div>
+                <div class="page-content">
+                    <h1 class="title">Introduction to Web Development</h1>
+                    <h2 class="subtitle">Building the Foundation</h2>
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop" alt="Web Development" class="page-image">
+                    </div>
+                    <div class="links">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank" class="page-link">
+                            <i class="fas fa-external-link-alt"></i> MDN Web Docs
+                        </a>
+                        <a href="https://www.w3schools.com/" target="_blank" class="page-link">
+                            <i class="fas fa-graduation-cap"></i> W3Schools
+                        </a>
+                    </div>
+                    <div class="task-list">
+                        <h3>Tasks for this chapter:</h3>
+                        <ul>
+                            <li><input type="checkbox" id="task1-1"><label for="task1-1">Set up development environment</label></li>
+                            <li><input type="checkbox" id="task1-2"><label for="task1-2">Learn about HTML basics</label></li>
+                            <li><input type="checkbox" id="task1-3"><label for="task1-3">Understand web browser functionality</label></li>
+                            <li><input type="checkbox" id="task1-4"><label for="task1-4">Explore developer tools</label></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 2: HTML Fundamentals -->
+            <div class="page" data-page="2">
+                <div class="page-number">02</div>
+                <div class="page-content">
+                    <h1 class="title">HTML Fundamentals</h1>
+                    <h2 class="subtitle">Structure and Semantics</h2>
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=400&h=250&fit=crop" alt="HTML Code" class="page-image">
+                    </div>
+                    <div class="links">
+                        <a href="https://html.spec.whatwg.org/" target="_blank" class="page-link">
+                            <i class="fas fa-book"></i> HTML Living Standard
+                        </a>
+                        <a href="https://validator.w3.org/" target="_blank" class="page-link">
+                            <i class="fas fa-check-circle"></i> HTML Validator
+                        </a>
+                    </div>
+                    <div class="task-list">
+                        <h3>Tasks for this chapter:</h3>
+                        <ul>
+                            <li><input type="checkbox" id="task2-1"><label for="task2-1">Create your first HTML document</label></li>
+                            <li><input type="checkbox" id="task2-2"><label for="task2-2">Learn semantic HTML elements</label></li>
+                            <li><input type="checkbox" id="task2-3"><label for="task2-3">Practice with forms and inputs</label></li>
+                            <li><input type="checkbox" id="task2-4"><label for="task2-4">Validate your HTML code</label></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 3: CSS Styling -->
+            <div class="page" data-page="3">
+                <div class="page-number">03</div>
+                <div class="page-content">
+                    <h1 class="title">CSS Styling</h1>
+                    <h2 class="subtitle">Design and Layout</h2>
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop" alt="CSS Design" class="page-image">
+                    </div>
+                    <div class="links">
+                        <a href="https://www.w3.org/Style/CSS/" target="_blank" class="page-link">
+                            <i class="fas fa-palette"></i> CSS Specifications
+                        </a>
+                        <a href="https://caniuse.com/" target="_blank" class="page-link">
+                            <i class="fas fa-search"></i> Can I Use
+                        </a>
+                    </div>
+                    <div class="task-list">
+                        <h3>Tasks for this chapter:</h3>
+                        <ul>
+                            <li><input type="checkbox" id="task3-1"><label for="task3-1">Style your first webpage</label></li>
+                            <li><input type="checkbox" id="task3-2"><label for="task3-2">Learn CSS selectors and specificity</label></li>
+                            <li><input type="checkbox" id="task3-3"><label for="task3-3">Master the box model</label></li>
+                            <li><input type="checkbox" id="task3-4"><label for="task3-4">Create responsive layouts</label></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 4: JavaScript Basics -->
+            <div class="page" data-page="4">
+                <div class="page-number">04</div>
+                <div class="page-content">
+                    <h1 class="title">JavaScript Basics</h1>
+                    <h2 class="subtitle">Programming Fundamentals</h2>
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=400&h=250&fit=crop" alt="JavaScript Code" class="page-image">
+                    </div>
+                    <div class="links">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="page-link">
+                            <i class="fas fa-code"></i> JavaScript Guide
+                        </a>
+                        <a href="https://javascript.info/" target="_blank" class="page-link">
+                            <i class="fas fa-book-open"></i> JavaScript.info
+                        </a>
+                    </div>
+                    <div class="task-list">
+                        <h3>Tasks for this chapter:</h3>
+                        <ul>
+                            <li><input type="checkbox" id="task4-1"><label for="task4-1">Write your first JavaScript program</label></li>
+                            <li><input type="checkbox" id="task4-2"><label for="task4-2">Learn variables and data types</label></li>
+                            <li><input type="checkbox" id="task4-3"><label for="task4-3">Understand functions and scope</label></li>
+                            <li><input type="checkbox" id="task4-4"><label for="task4-4">Practice with DOM manipulation</label></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 5: Responsive Design -->
+            <div class="page" data-page="5">
+                <div class="page-number">05</div>
+                <div class="page-content">
+                    <h1 class="title">Responsive Design</h1>
+                    <h2 class="subtitle">Mobile-First Approach</h2>
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=250&fit=crop" alt="Responsive Design" class="page-image">
+                    </div>
+                    <div class="links">
+                        <a href="https://web.dev/responsive-web-design-basics/" target="_blank" class="page-link">
+                            <i class="fas fa-mobile-alt"></i> Responsive Basics
+                        </a>
+                        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" class="page-link">
+                            <i class="fas fa-expand-arrows-alt"></i> Flexbox Guide
+                        </a>
+                    </div>
+                    <div class="task-list">
+                        <h3>Tasks for this chapter:</h3>
+                        <ul>
+                            <li><input type="checkbox" id="task5-1"><label for="task5-1">Create mobile-friendly layouts</label></li>
+                            <li><input type="checkbox" id="task5-2"><label for="task5-2">Use CSS Grid and Flexbox</label></li>
+                            <li><input type="checkbox" id="task5-3"><label for="task5-3">Implement media queries</label></li>
+                            <li><input type="checkbox" id="task5-4"><label for="task5-4">Test on different devices</label></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 6: Modern JavaScript -->
+            <div class="page" data-page="6">
+                <div class="page-number">06</div>
+                <div class="page-content">
+                    <h1 class="title">Modern JavaScript</h1>
+                    <h2 class="subtitle">ES6+ Features</h2>
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=400&h=250&fit=crop" alt="Modern JavaScript" class="page-image">
+                    </div>
+                    <div class="links">
+                        <a href="https://babeljs.io/" target="_blank" class="page-link">
+                            <i class="fas fa-cogs"></i> Babel Transpiler
+                        </a>
+                        <a href="https://es6-features.org/" target="_blank" class="page-link">
+                            <i class="fas fa-star"></i> ES6 Features
+                        </a>
+                    </div>
+                    <div class="task-list">
+                        <h3>Tasks for this chapter:</h3>
+                        <ul>
+                            <li><input type="checkbox" id="task6-1"><label for="task6-1">Learn arrow functions and destructuring</label></li>
+                            <li><input type="checkbox" id="task6-2"><label for="task6-2">Work with Promises and async/await</label></li>
+                            <li><input type="checkbox" id="task6-3"><label for="task6-3">Use modules and imports</label></li>
+                            <li><input type="checkbox" id="task6-4"><label for="task6-4">Practice with template literals</label></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 7: Web APIs -->
+            <div class="page" data-page="7">
+                <div class="page-number">07</div>
+                <div class="page-content">
+                    <h1 class="title">Web APIs</h1>
+                    <h2 class="subtitle">Connecting to Services</h2>
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop" alt="Web APIs" class="page-image">
+                    </div>
+                    <div class="links">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/API" target="_blank" class="page-link">
+                            <i class="fas fa-link"></i> Web APIs Reference
+                        </a>
+                        <a href="https://jsonplaceholder.typicode.com/" target="_blank" class="page-link">
+                            <i class="fas fa-database"></i> Test API
+                        </a>
+                    </div>
+                    <div class="task-list">
+                        <h3>Tasks for this chapter:</h3>
+                        <ul>
+                            <li><input type="checkbox" id="task7-1"><label for="task7-1">Make your first API call</label></li>
+                            <li><input type="checkbox" id="task7-2"><label for="task7-2">Handle JSON data responses</label></li>
+                            <li><input type="checkbox" id="task7-3"><label for="task7-3">Implement error handling</label></li>
+                            <li><input type="checkbox" id="task7-4"><label for="task7-4">Create dynamic content from API</label></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 8: Project Deployment -->
+            <div class="page" data-page="8">
+                <div class="page-number">08</div>
+                <div class="page-content">
+                    <h1 class="title">Project Deployment</h1>
+                    <h2 class="subtitle">Going Live</h2>
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=250&fit=crop" alt="Deployment" class="page-image">
+                    </div>
+                    <div class="links">
+                        <a href="https://netlify.com/" target="_blank" class="page-link">
+                            <i class="fas fa-cloud"></i> Netlify
+                        </a>
+                        <a href="https://vercel.com/" target="_blank" class="page-link">
+                            <i class="fas fa-rocket"></i> Vercel
+                        </a>
+                    </div>
+                    <div class="task-list">
+                        <h3>Tasks for this chapter:</h3>
+                        <ul>
+                            <li><input type="checkbox" id="task8-1"><label for="task8-1">Prepare your project for deployment</label></li>
+                            <li><input type="checkbox" id="task8-2"><label for="task8-2">Choose a hosting platform</label></li>
+                            <li><input type="checkbox" id="task8-3"><label for="task8-3">Deploy your first website</label></li>
+                            <li><input type="checkbox" id="task8-4"><label for="task8-4">Set up custom domain</label></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="navigation">
+            <button class="nav-btn prev-btn" id="prevBtn">
+                <i class="fas fa-chevron-left"></i>
+                Previous
+            </button>
+            <div class="page-indicator">
+                <span class="current-page">1</span> / <span class="total-pages">8</span>
+            </div>
+            <button class="nav-btn next-btn" id="nextBtn">
+                Next
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Page Dots -->
+        <div class="page-dots">
+            <div class="dot active" data-page="1"></div>
+            <div class="dot" data-page="2"></div>
+            <div class="dot" data-page="3"></div>
+            <div class="dot" data-page="4"></div>
+            <div class="dot" data-page="5"></div>
+            <div class="dot" data-page="6"></div>
+            <div class="dot" data-page="7"></div>
+            <div class="dot" data-page="8"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
